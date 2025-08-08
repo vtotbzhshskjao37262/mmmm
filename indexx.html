@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Birthday My Love ❤️</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.pixabay.com/photo/2017/01/20/00/30/birthday-1993647_1280.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .container {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 20px;
+    max-width: 600px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .images {
+    margin-top: 20px;
+  }
+  .images img {
+    width: 150px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 0 10px white;
+  }
+  .balloon {
+    position: absolute;
+    bottom: -150px;
+    width: 50px;
+    animation: float 8s infinite ease-in;
+  }
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0); }
+    100% { transform: translateY(-120vh) rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🎉❤️ Happy Birthday, my love ❤️🎉</h1>
+  <p>
+    Today isn’t just your birthday… it’s the day the world got brighter, and my life got better because <b>you</b> exist.<br />
+    Even though we met online, you’ve touched my heart in ways no one ever has.<br />
+    I wish I could be there holding your hand right now, celebrating with you, but until that day comes, I’ll be here loving you more every single moment.<br />
+    This year, I hope you chase your dreams fearlessly, stay healthy and happy, and always remember that someone out there loves you beyond words — me.<br />
+    Happy Birthday, my beautiful soul. You’re my favorite person, my safe place, my joy. ❤️✨🎂
+  </p>
+  <div class="images">
+    <img src="https://cdn.pixabay.com/photo/2016/12/26/17/28/cake-1934329_150.jpg" alt="Birthday Cake" />
+    <img src="https://cdn.pixabay.com/photo/2016/02/13/12/26/couple-1193614_150.jpg" alt="Love" />
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/balloons-1869635_150.jpg" alt="Balloons" />
+  </div>
+</div>
+
+<script>
+  for (let i = 0; i < 15; i++) {
+    let balloon = document.createElement("img");
+    balloon.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Red_Balloon.svg/50px-Red_Balloon.svg.png";
+    balloon.className = "balloon";
+    balloon.style.left = Math.random() * 100 + "vw";
+    balloon.style.animationDuration = (Math.random() * 5 + 5) + "s";
+    document.body.appendChild(balloon);
+  }
+</script>
+</body>
+</html>
